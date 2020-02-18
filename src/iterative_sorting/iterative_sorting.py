@@ -25,7 +25,9 @@ def bubble_sort( arr ):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 
-print(selection_sort([1, 5, 8, 4, 2, 9, 6, 0, 3, 7]))
+print(bubble_sort([1, 5, 8, 4, 2, 9, 6, 0, 3, 7]))
+
+
 # STRETCH: implement the Count Sort function below
 def count_sort( arr, maximum=-1 ):
     freq = {}
@@ -44,4 +46,4 @@ def count_sort( arr, maximum=-1 ):
     else:
         return("Error, negative numbers not allowed in Count Sort")
 
-print(count_sort([1, 5, 8, 4, 2, 9, 6, 0, 3, 7]))
+print(count_sort([1, 1, 2, 5, 8, 4, 2, 9, 6, 0, 3, 7]))
